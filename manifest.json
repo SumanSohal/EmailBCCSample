@@ -1,19 +1,22 @@
 {
-   "commerceSuiteVersion": "6.1.0.3",
-   "extensions": [
-       "EmailBCCSample",
-       "yacceleratorstorefront",
-       "backoffice",
-       "platformbackoffice",
-       "electronicsstore",
-       "basecommercebackoffice",       
-       "yacceleratorfulfilmentprocess",
-       "solrfacetsearchbackoffice",
-       "commerceservicesbackoffice"
-   ],
-   "storeFrontExtension": "yacceleratorstorefront",
-   "storeFrontWebRoot": "/yacceleratorstorefront",
-   "properties": [
+    "commerceSuiteVersion": "6.7.0.0",
+    "extensions": [
+        "kiwi",
+        "tiger",
+        "privacyoverlayeraddon",
+        "yacceleratorstorefront",
+        "backoffice"
+    ],
+    "storefrontAddons" : [
+        {
+            "addon": "privacyoverlayeraddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        }
+    ],
+    "storeFrontExtension": "yacceleratorstorefront",
+    "storeFrontWebRoot": "/yacceleratorstorefront",
+    "properties": [
         {
             "key": "test.property.1",
             "value": "test.property.1.value"
@@ -23,44 +26,30 @@
             "value": "test.property.2.value"
         }
     ],
-   "project": "ps1b",
-   "recipe": "pipeline_b2c_dockerized",
-   "resultingImageVersion": "ps1b",    
-   "aspects": [
+    "aspects": [
         {
-            "name": "backgroundProcessing",
+            "name": "hac",
             "properties": [
                 {
-                    "key": "cluster.node.groups",
-                    "value": "backgroundProcessing"
-                }              
-            ]
-        },
-        {
-            "name": "accstorefront",
-            "properties": [
-                {
-                    "key": "acc.test.property.1",
-                    "value": "acc.1.value"
+                    "key": "hac.test.property.1",
+                    "value": "hac.test.property.1.value"
                 },
                 {
-                    "key": "acc.test.property.2",
-                    "value": "acc.2.value"
-                }                
-            ]
-        },
-        {
-            "name": "admin",
-            "properties": [
+                    "key": "hac.test.property.2",
+                    "value": "hac.test.property.2.value"
+                }
+            ],
+            "webapps": [
                 {
-                    "key": "adm.test.property.1",
-                    "value": "adm.1.value"
+                    "name": "hac"
                 },
                 {
-                    "key": "adm.test.property.2",
-                    "value": "adm.2.value"
-                }                
+                    "name": "mediaweb"
+                },
+                {
+                    "name": "backoffice"
+                }
             ]
-        }        
+        }
     ]
-}
+ }
