@@ -1,5 +1,4 @@
 {
-    "commerceSuiteVersion": "6.7.0.0",
     "extensions": [
         "kiwi",
         "tiger",
@@ -38,18 +37,8 @@
                     "key": "hac.test.property.2",
                     "value": "hac.test.property.2.value"
                 }
-            ],
-            "webapps": [
-                {
-                    "name": "hac"
-                },
-                {
-                    "name": "mediaweb"
-                },
-                {
-                    "name": "backoffice"
-                }
             ]
         }
-    ]
+    ],
+    "skipOrchestrationTests": "true"
  }
