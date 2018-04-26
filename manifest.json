@@ -1,9 +1,17 @@
 {
-	"commerceSuiteVersion": "6.1.0.3",
+    "commerceSuiteVersion": "6.1.0.3",
     "extensions": [
         "training",
+        "privacyoverlayeraddon",
         "yacceleratorstorefront",
         "backoffice"
+    ],
+    "storefrontAddons" : [
+        {
+            "addon": "privacyoverlayeraddon",
+            "storefront": "yacceleratorstorefront",
+            "template": "yacceleratorstorefront"
+        }
     ],
     "storeFrontExtension": "yacceleratorstorefront",
     "storeFrontWebRoot": "/yacceleratorstorefront",
@@ -29,8 +37,18 @@
                     "key": "hac.test.property.2",
                     "value": "hac.test.property.2.value"
                 }
+            ],
+            "webapps": [
+                {
+                    "name": "hac"
+                },
+                {
+                    "name": "mediaweb"
+                },
+                {
+                    "name": "backoffice"
+                }
             ]
         }
-    ],
-    "skipOrchestrationTests": "true"
+    ]
  }
