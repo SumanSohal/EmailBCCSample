@@ -1,17 +1,9 @@
 {
+	"commerceSuiteVersion": "6.1.0.3",
     "extensions": [
-        "kiwi",
-        "tiger",
-        "privacyoverlayeraddon",
+        "training",
         "yacceleratorstorefront",
         "backoffice"
-    ],
-    "storefrontAddons" : [
-        {
-            "addon": "privacyoverlayeraddon",
-            "storefront": "yacceleratorstorefront",
-            "template": "yacceleratorstorefront"
-        }
     ],
     "storeFrontExtension": "yacceleratorstorefront",
     "storeFrontWebRoot": "/yacceleratorstorefront",
